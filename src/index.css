@@ -1,0 +1,36 @@
+.App {
+  text-align: center;
+}
+
+/* index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* In your global CSS file or Tailwind config */
+@layer utilities {
+  .scroll-container-dark::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scroll-container-dark::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+  }
+
+  .scroll-container-dark::-webkit-scrollbar-track {
+    background-color: rgba(255, 255, 255, 0.4); /* Red with 50% opacity */
+  }
+  .scroll-container-light::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  .scroll-container-light::-webkit-scrollbar-thumb {
+    background-color: #eee;
+    border-radius: 10px;
+  }
+
+  .scroll-container-light::-webkit-scrollbar-track {
+    background-color: #ccc; /* Red with 50% opacity */
+  }
+}
